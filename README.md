@@ -8,6 +8,8 @@
 
 #### 1. [[⬆]](#toc) <a name='????'>????????????</a>
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
+
+Результат выполнения команды `vagrant up`
 ![image](https://github.com/user-attachments/assets/afdd54d7-0c98-4d4b-ba07-2ecc96d83612)
 
 #### 2. [[⬆]](#toc) <a name='????'>????????????</a>
