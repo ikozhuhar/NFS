@@ -1,12 +1,12 @@
 ### NFS-FUSE
 
 #### <a name='toc'>Содержание</a>
-1. [Определение алгоритма с наилучшим сжатием](#compression) ???????????
-2. [Настраиваем сервер NFS](#setting_server) ???????????
-3. [Работа со снапшотом](#snapshots) ???????????
+1. [Создаём виртуальные машины](#create_vm)
+2. [Настраиваем сервер NFS](#setting_server)
+3. [Настраиваем клиент NFS](#setting_client)
 4. [Рекомендуемые источники](#recommended_sources) ???????????
 
-#### 1. [[⬆]](#toc) <a name='????'>????????????</a>
+#### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
 
 #### Результат выполнения команды `vagrant up`
@@ -19,8 +19,18 @@ sudo apt install nfs-kernel-server
 ```
 ![image](https://github.com/user-attachments/assets/87315fae-024a-4a4f-b6a1-e4f32aba6847)
 
+##### Проверяем наличие слушающих портов 2049/udp, 2049/tcp,111/udp, 111/tcp командой `sudo netstat -tunlp`
+![image](https://github.com/user-attachments/assets/8801c591-c8fb-4f12-a5a7-e5f3454e98ce)
 
-#### 3. [[⬆]](#toc) <a name='????'>????????????</a>
+##### Создаём и настраиваем директорию, которая будет экспортирована в будущем
+```
+sudo mkdir -p /srv/share/upload
+sudo chown -R nobody:nogroup /srv/share
+sudo chmod 0777 /srv/share/upload
+```
+![image](https://github.com/user-attachments/assets/0b263e92-221e-4fba-8b7a-fc0806fa7bb2)
+
+#### 3. [[⬆]](#toc) <a name='setting_client'>Настраиваем клиент NFS</a>
 
 #### 4. [[⬆]](#toc) <a name='????'>????????????</a>
 
