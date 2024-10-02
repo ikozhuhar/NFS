@@ -63,6 +63,14 @@ sudo apt install nfs-common
 ```
 ![image](https://github.com/user-attachments/assets/fb2706c2-774a-40d6-99a8-4252a53202dd)
 
+##### Создаем директорию, монтируем ее и проверяем
+```
+sudo mkdir -p /mnt/nfs
+sudo mount 192.168.50.10:/srv/share/ /mnt/nfs
+```
+![image](https://github.com/user-attachments/assets/63378084-6a8f-407a-a55c-b1a553f9cdc1)
+
+
 ##### Добавляем в /etc/fstab строку и проверяем
 ```
 echo "192.168.50.10:/srv/share/ /mnt/nfs vers=3,noauto,x-systemd.automount 0 0" >> /etc/fstab
