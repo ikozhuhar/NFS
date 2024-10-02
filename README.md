@@ -59,6 +59,8 @@ vagrant ssh nfsс
 sudo apt update
 sudo apt install nfs-common
 ```
+![image](https://github.com/user-attachments/assets/fb2706c2-774a-40d6-99a8-4252a53202dd)
+
 
 
 
