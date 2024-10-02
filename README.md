@@ -37,9 +37,9 @@ sudo chown -R nobody:nogroup /srv/share
 sudo chmod 0777 /srv/share/upload
 ```
 
-##### Создаём файл index.html в только что созданной директории /srv/share/upload
+##### Создаём файл index.html в только что созданной директории `/srv/share/upload`
 ```
-echo "Hello World" > /srv/share/upload/index.html
+echo "Hello World" >> /srv/share/upload/index.html
 ```
 ![image](https://github.com/user-attachments/assets/1ffe51fa-2252-43e4-ab85-14da0aa0222d)
 
@@ -89,6 +89,13 @@ systemctl daemon-reload
 systemctl restart remote-fs.target
 ```
 ![image](https://github.com/user-attachments/assets/2ac777c8-b8c9-442f-a25c-b9d9a39f917f)
+
+##### Проверяем работу RPC `showmount -a 192.168.50.10`
+```
+sudo showmount -a 192.168.50.10
+```
+![image](https://github.com/user-attachments/assets/2e05d650-d7c0-47ae-bbc6-958e7845b868)
+
 
 #### 4. [[⬆]](#toc) <a name='creating_automated'>Создание автоматизированного Vagrantfile</a>
 
