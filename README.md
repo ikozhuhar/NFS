@@ -36,6 +36,13 @@ sudo mkdir -p /srv/share/upload
 sudo chown -R nobody:nogroup /srv/share
 sudo chmod 0777 /srv/share/upload
 ```
+
+##### Создаём файл index.html в только что созданной директории /srv/share/upload
+```
+echo "Hello World" > /srv/share/upload/index.html
+```
+![image](https://github.com/user-attachments/assets/1ffe51fa-2252-43e4-ab85-14da0aa0222d)
+
 ##### Cоздаём в файле /etc/exports структуру, которая позволит экспортировать ранее созданную директорию:
 ```
 cat << EOF > /etc/exports 
