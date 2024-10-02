@@ -68,8 +68,7 @@ sudo apt install nfs-common
 sudo mkdir -p /mnt/nfs
 sudo mount 192.168.50.10:/srv/share/ /mnt/nfs
 ```
-![image](https://github.com/user-attachments/assets/63378084-6a8f-407a-a55c-b1a553f9cdc1)
-
+![image](https://github.com/user-attachments/assets/f70992ad-02e1-43bc-b9c7-dd0a3aaedac6)
 
 ##### Добавляем в /etc/fstab строку и проверяем
 ```
