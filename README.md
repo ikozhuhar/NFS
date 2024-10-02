@@ -19,10 +19,11 @@
 ```
 vagrant ssh nfss
 ```
-##### Обновляем и устанавливем сервер:
+##### Обновляем, устанавливем и проверяем статус сервера:
 ```
 sudo apt update
 sudo apt install nfs-kernel-server
+sudo systemctl status nfs-server
 ```
 ![image](https://github.com/user-attachments/assets/87315fae-024a-4a4f-b6a1-e4f32aba6847)
 
