@@ -4,7 +4,8 @@
 1. [Создаём виртуальные машины](#create_vm)
 2. [Настраиваем сервер NFS](#setting_server)
 3. [Настраиваем клиент NFS](#setting_client)
-4. [Рекомендуемые источники](#recommended_sources) ???????????
+4. [Создание автоматизированного Vagrantfile](#creating_automated)
+5. [Рекомендуемые источники](#recommended_sources) ???????????
 
 #### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
@@ -61,13 +62,26 @@ sudo apt install nfs-common
 ```
 ![image](https://github.com/user-attachments/assets/fb2706c2-774a-40d6-99a8-4252a53202dd)
 
+##### Добавляем в /etc/fstab строку и проверяем
+```
+echo "192.168.50.10:/srv/share/ /mnt/nfs vers=3,noauto,x-systemd.automount 0 0" >> /etc/fstab
+```
+![image](https://github.com/user-attachments/assets/93b3009e-ea9a-448b-b69f-892655988197)
+
+##### Далее выполняем команды:
+```
+systemctl daemon-reload
+systemctl restart remote-fs.target
+```
+![image](https://github.com/user-attachments/assets/2ac777c8-b8c9-442f-a25c-b9d9a39f917f)
+
+#### 4. [[⬆]](#toc) <a name='creating_automated'>Создание автоматизированного Vagrantfile</a>
 
 
 
 
 
 
-#### 4. [[⬆]](#toc) <a name='????'>????????????</a>
 
 #### 5. [[⬆]](#toc) <a name='????'>????????????</a>
 
