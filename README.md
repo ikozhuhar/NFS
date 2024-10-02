@@ -13,6 +13,12 @@
 ![image](https://github.com/user-attachments/assets/afdd54d7-0c98-4d4b-ba07-2ecc96d83612)
 
 #### 2. [[⬆]](#toc) <a name='setting_server'>Настраиваем сервер NFS</a>
+
+##### Заходим на сервер:
+```
+vagrant ssh nfss
+```
+##### Обновляем и устанавливем сервер:
 ```
 sudo apt update
 sudo apt install nfs-kernel-server
@@ -43,6 +49,21 @@ exportfs -s
 ![image](https://github.com/user-attachments/assets/0b263e92-221e-4fba-8b7a-fc0806fa7bb2)
 
 #### 3. [[⬆]](#toc) <a name='setting_client'>Настраиваем клиент NFS</a>
+
+##### Заходим на клиента:
+```
+vagrant ssh nfsс
+```
+##### Обновляем и устанавливем клиента:
+```
+sudo apt update
+sudo apt install nfs-common
+```
+
+
+
+
+
 
 #### 4. [[⬆]](#toc) <a name='????'>????????????</a>
 
