@@ -34,7 +34,7 @@ cat << EOF > /etc/exports
 /srv/share 192.168.50.11/32(rw,sync,root_squash)
 EOF
 ```
-##### Экспортируем ранее созданную директорию и проверяем ее командами:
+##### Экспортируем ранее созданную директорию `exportfs -r` и проверяем `exportfs -s`:
 ```
 exportfs -r
 exportfs -s
