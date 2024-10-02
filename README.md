@@ -33,11 +33,13 @@ sudo chmod 0777 /srv/share/upload
 cat << EOF > /etc/exports 
 /srv/share 192.168.50.11/32(rw,sync,root_squash)
 EOF
-# Экспортируем ранее созданную директорию:
+```
+##### Экспортируем ранее созданную директорию и проверяем ее командами:
+```
 exportfs -r
-# Проверяем экспортированную директорию
 exportfs -s
 ```
+
 ![image](https://github.com/user-attachments/assets/0b263e92-221e-4fba-8b7a-fc0806fa7bb2)
 
 #### 3. [[⬆]](#toc) <a name='setting_client'>Настраиваем клиент NFS</a>
