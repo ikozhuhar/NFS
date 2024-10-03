@@ -7,6 +7,8 @@
 4. [Автоматизация Vagrant + Ansible](#creating_automated)
 
 #### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
+![image](https://github.com/user-attachments/assets/29285fa7-86c3-45ef-afbc-62b20a614d5f)
+
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
 ![image](https://github.com/user-attachments/assets/515f4500-a425-42cc-9dbf-7d252bf9f485)
 
