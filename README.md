@@ -4,8 +4,7 @@
 1. [Создаём виртуальные машины](#create_vm)
 2. [Настраиваем сервер NFS](#setting_server)
 3. [Настраиваем клиент NFS](#setting_client)
-4. [Создание автоматизированного Vagrantfile](#creating_automated)
-5. [Рекомендуемые источники](#recommended_sources) ???????????
+4. [Автоматизация Vagrant + Ansible](#creating_automated)
 
 #### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
@@ -97,18 +96,13 @@ sudo showmount -a 192.168.50.10
 ![image](https://github.com/user-attachments/assets/2e05d650-d7c0-47ae-bbc6-958e7845b868)
 
 
-#### 4. [[⬆]](#toc) <a name='creating_automated'>Создание автоматизированного Vagrantfile</a>
+#### 4. [[⬆]](#toc) <a name='creating_automated'>Автоматизация Vagrant + Ansible</a>
 
+##### Структура
+![image](https://github.com/user-attachments/assets/009642cf-efb4-4e2d-8f44-ce1eab7822d9)
 
+##### Запускаем командой `vagrant up`
+`
+vagrant up
+`
 
-
-
-
-
-#### 5. [[⬆]](#toc) <a name='????'>????????????</a>
-
-#### 6. [[⬆]](#toc) <a name='????'>????????????</a>
-
-#### 7. [[⬆]](#toc) <a name='????'>????????????</a>
-
-#### 8. [[⬆]](#toc) <a name='compression'>????????????</a>
