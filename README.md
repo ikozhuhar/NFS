@@ -8,6 +8,7 @@
 
 #### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
 ![image](https://github.com/user-attachments/assets/728e5599-fca5-4c2f-9c74-dceae04d6914)
+![image](https://github.com/user-attachments/assets/515f4500-a425-42cc-9dbf-7d252bf9f485)
 
 #### Результат выполнения команды `vagrant up`
 ![image](https://github.com/user-attachments/assets/afdd54d7-0c98-4d4b-ba07-2ecc96d83612)
