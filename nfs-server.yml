@@ -1,0 +1,52 @@
+---
+- name: Configure nfs-server
+  hosts: nfss
+  become: true
+  gather_facts: false
+
+  vars:
+    destination_dir: /srv/share/upload/
+    local_file: index.html
+
+  handlers:
+    - name: Restart nfs-kernel-server
+      service:
+        name: nfs-kernel-server
+        state: restarted
+
+  tasks:
+
+    - name: Ensure nfs-kernel-server is installed
+      ansible.builtin.package:
+        name: nfs-kernel-server
+        update_cache: true
+      notify: Restart nfs-kernel-server
+
+    - name: Create a directory
+      ansible.builtin.file:
+        path: /srv/share/
+        mode: '0755'
+        owner: root
+        group: root
+        state: directory
+      notify: Restart nfs-kernel-server
+    
+    - name: Copy index.html
+      ansible.builtin.copy:
+        src: "{{ local_file }}"
+        dest: "{{ destination_dir }}"
+        mode: '0644'
+      notify: Restart nfs-kernel-server
+    
+    - name: Copy file exports
+      ansible.builtin.copy:
+        src: ./exports
+        dest: /etc/
+        mode: '0644'
+      notify: Restart nfs-kernel-server
+      
+    - name: This command exportfs -r
+      ansible.builtin.shell:
+        cmd: exportfs -r
+      notify: Restart nfs-kernel-server
+...
