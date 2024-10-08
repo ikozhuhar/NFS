@@ -5,6 +5,7 @@
 2. [Настраиваем сервер NFS](#setting_server)
 3. [Настраиваем клиент NFS](#setting_client)
 4. [Автоматизация Vagrant + Ansible](#creating_automated)
+5. [Дополнительные источники](#recommended_sources)
 
 #### 1. [[⬆]](#toc) <a name='create_vm'>Создаём виртуальные машины</a>
 ![image](https://github.com/user-attachments/assets/29285fa7-86c3-45ef-afbc-62b20a614d5f)
@@ -102,7 +103,13 @@ sudo showmount -a 192.168.50.10
 ![image](https://github.com/user-attachments/assets/009642cf-efb4-4e2d-8f44-ce1eab7822d9)
 
 ##### Запускаем командой `vagrant up`
-`
+```
 vagrant up
-`
+```
+
+
+
+#### 4. [[⬆]](#toc) <a name='recommended_sources'>Дополнительные источники</a>
+
+1. Весь Linux Для тех, кто хочет стать профессионалом, стр.697
 
